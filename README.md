@@ -32,7 +32,6 @@
 | ft_strtrim | `char *ft_strtrim(char const *s1, char const *set);` | Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string. | malloc | - |
 | ft_split | `char **ft_split(char const *s, char c);` | Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must end with a NULL pointer. | malloc, free | - |
 | ft_itoa | `char *ft_itoa(int n);` | Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled. | malloc | - |
-| Function Name | Prototype | Description | External Functions | Notes |
 | ft_substr | `char *ft_substr(char const *s, unsigned int start, size_t len);` | Allocates (with malloc) and returns a substring from the string 's'. The substring begins at index 'start' and is of maximum size 'len'. | `malloc` | - |
 | ft_strjoin | `char *ft_strjoin(char const *s1, char const *s2);` | Allocates (with malloc) and returns a new string, which is the result of the concatenation of 's1' and 's2'. | `malloc` | - |
 | ft_strtrim | `char *ft_strtrim(char const *s1, char const *set);` | Allocates (with malloc) and returns a copy of 's1' with the characters specified in 'set' removed from the beginning and the end of the string. | `malloc` | - |
