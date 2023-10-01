@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/06 14:20:06 by jmigoya-          #+#    #+#             */
-/*   Updated: 2023/05/23 17:22:17 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2023/10/01 16:34:12 by migmanu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,24 +37,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (size + src_len);
 	return (dst_len + src_len);
 }
-/*
-#include <bsd/string.h>
-int	main(void)
-{
-	const char	src[] = "abcdefg123";
-	char		dst[] = "123";
-	//size_t		size = ft_strlen(src) + 1 + ft_strlen(dst);
-	size_t		size = -1;
-	const char	src2[] = "abcdefg123";
-	char		dst2[] = "123";
-
-	printf("original:\n dst: %s\n return: %zu\n", dst, strlcat(dst, src, size));
-	printf("copy:\n dst: %s\n return: %zu\n", dst2, ft_strlcat(dst2, src2, size));
-	
-	//printf("size: %zu\nr: %zu\ndst: %s", size, ft_strlcat(dst, src, size), dst);
-	return (0);
-}
-*/
 /*
 Reproduce the behavior of the
 function strlcat
