@@ -6,7 +6,7 @@
 #    By: jmigoya- <jmigoya-@student.42berlin.d      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/06 17:23:11 by jmigoya-          #+#    #+#              #
-#    Updated: 2023/05/22 18:53:55 by jmigoya-         ###   ########.fr        #
+#    Updated: 2023/11/15 17:04:53 by jmigoya-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -36,8 +36,8 @@ BONUS_OBJS = $(BONUSS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 bonus : $(OBJS) $(BONUS_OBJS)
 	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
