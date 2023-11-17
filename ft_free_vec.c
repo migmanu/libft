@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Frees a character vector
+// Frees a character vector 
 void	ft_free_vec(char *vec[])
 {
 	int	i;
